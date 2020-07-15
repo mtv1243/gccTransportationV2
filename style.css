@@ -1,0 +1,529 @@
+@import url("https://use.typekit.net/kvw6pkz.css");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+a {
+  color: #D50707;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/*
+---------TOP BAR----------
+*/
+#top-bar {
+/*   height: 2em; */
+  background-color: #090C75;
+  text-align: center;
+  display: flex;
+/*   flex-direction: column; */
+  justify-content: space-around;
+  align-items: center;
+}
+
+.covid-top-bar {
+  background-color: #d50707;
+  width: 50%;
+}
+
+#espanol {
+  width: 50%;
+}
+
+.fa-phone {
+  display: none;
+}
+
+#top-bar > a {
+  color: #FEFCFD;
+  text-decoration: none;
+}
+
+#top-bar > a:hover {
+  text-decoration: underline;
+}
+
+/*
+--------HEADER-------
+*/
+#header {
+  border-bottom: 10px solid #090C75;
+}
+
+/*
+---------MARQUIS---------
+*/
+.marquis {
+  background-color: #FEFCFD;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 10px 0px 10px rgba(0,0,0,.1);
+}
+
+.call-now-wrapper {
+  font-size: 13px;
+  font-weight: 500;
+  text-align: center;
+  color: #FEFCFD;
+  background-color: #D50707;
+  border-radius: 25px;
+  padding: 5px 40px;
+  margin: 0;
+}
+
+.call-now, .call-now-number {
+  margin: 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+.menu-wrapper {
+/*   height: 75px; */
+  position: sticky;
+  top: 0;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-wrapper {
+  display: inline-block;
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1574188707/GCC_Transportation_Logo_07_alpha_alpha.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 40px;
+  width: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.menu-bar-mobile, .fa-bars {
+  display: none;
+}
+
+.menu-bar {
+  display: flex;
+  flex-basis: 50%;
+}
+
+.menu-item {
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  flex-basis: 16.66%;
+  margin: 0;
+  padding: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  cursor: pointer;
+  color: #2B2A27;
+  transition: all .2s;
+/*   border: 1px solid; */
+}
+
+.menu-item:hover {
+  color: #FEFCFD;
+  background-color: #D50707;
+}
+
+.hero {
+  height: 70vh;
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594143145/GCC%20Transportation%20V2/stock-photo-couple-of-seniors-smiling-and-looking-at-the-same-tablet-hugged-on-the-sofa-indoor-at-home-1389334208-compressed-flipped.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*
+---------MAIN FLEX STYLES--------
+*/
+
+main {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#sections-wrapper {
+  flex-basis: 70%;
+  margin-top: -200px;
+  padding-top: 40px;
+  background-color: #F8F6F5;
+/*   border-right: 10px solid #090c75; */
+}
+
+#sidebar {
+  background-color: #fff;
+  flex-basis: 30%;
+  padding: 20px;
+}
+
+/*
+---------SECTIONS---------
+*/
+
+section {
+  padding-left: 40px;
+  padding-right: 40px;
+/*   height: 200px; */
+}
+
+.separator {
+  width: 80%;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.red-color {
+  color: #D50707;
+}
+
+.first-title {
+  font-weight: 500;
+  font-size: 40px;
+  margin: 0;
+  line-height: 36px;
+  padding: 0;
+  display: inline;
+}
+
+.section-title {
+  position: absolute;
+  bottom: 20px;
+  left: 00px;
+  line-height: 1em;
+  font-size: 70px;
+  font-family: proxima-nova-extra-condensed, sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.enroll-title, .services-title, .drivers-title {
+  color: #383733;
+  text-shadow: 0px 0px 20px rgba(255,255,255, 1);
+}
+
+.section-photo {
+  position: relative;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 40px;
+/*   padding: 20px; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.services-photo {
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594240717/GCC%20Transportation%20V2/stock-photo-young-man-in-wheelchair-with-wide-opened-arms-enjoying-his-life-at-a-lake-in-spring-182715095-compressed.jpg");
+}
+
+.enroll-photo {
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594241774/GCC%20Transportation%20V2/stock-photo-two-businesswomen-using-laptop-in-boardroom-meeting-633364772.jpg");
+}
+
+.drivers-photo {
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594831666/GCC%20Transportation%20V2/stock-photo-transport-people-and-taxi-concept-happy-smiling-male-driver-driving-car-with-passenger-1522211711.jpg");
+  background-position: 50% 35%;
+}
+
+.gradient {
+  width: 80%;
+  height: 100%;
+  background: -moz-linear-gradient(left, rgba(248,246,245,1) 0%, rgba(230,230,230,0) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(248,246,245,1) 0%,rgba(230,230,230,0) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(248,246,245,1) 0%,rgba(230,230,230,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f6f5', endColorstr='#00e6e6e6',GradientType=1 ); /* IE6-9 */
+}
+
+/*
+----------ENROLL STYLES-------------
+*/
+.enroll {
+/*   background-color: #ccd; */
+}
+
+ol > li {
+  font-weight: 500;
+}
+
+ol > li > span.li-text {
+  font-weight: 200;
+}
+
+/*
+--------SIDEBAR STYLES--------------
+*/
+/* #sidebar {
+  background-color: #fff;
+  flex-basis: 30%;
+  padding: 20px;
+} */
+
+.sidebar-title {
+  font-size: 2em;
+  line-height: 1.1em;
+  color: #CB1010;
+}
+
+.paperform-button {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  text-align: center;
+  background-color: #090C75;
+  color: #FEFCFD;
+}
+
+/* 
+--------BUTTON STYLES-------
+*/
+.button-wrapper {
+  margin: 0 auto;
+  margin-bottom: 45px;
+  width: 60%;
+  height: 40px;
+  background-color: #CB1010;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FEFCFD;
+  text-decoration: none;
+  padding-left: auto;
+  font-weight: 500;
+}
+
+/* BENEFITS STYLES */
+.benefits_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+/*   font-size: 16px; */
+}
+
+.benefit {
+  color: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.benefitTitle {
+  color: #d50707;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.fa-circle {
+  padding-right: 10px;
+  font-size: 4px;
+}
+
+.benefit h4 {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #090c75;
+  color: #fefcfd;
+  font-weight: 400;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 15px;
+  margin: 1px;
+}
+
+
+/*
+-----------FOOTER STYLES------------
+*/
+footer {
+  padding: 40px;
+/*   padding-bottom: 80px; */
+  background-color: #090C75;
+  color: #FEFCFD;
+/*   height: 300px; */
+  font-size: 12px;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-left, 
+.footer-center, 
+.footer-right {
+  flex-basis: 25%;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-call-now {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.footer-call-now > a {
+  color: #fefcfd;
+}
+
+.footer-link {
+  color: #fefcfd;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #cecece;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 10px;
+}
+
+@media only screen and (max-width: 425px) {
+  
+  .hero {
+    height: 60vh;
+  }
+  
+  main {
+    width: 100%;
+  }
+  
+  .call-now-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  .call-now, .call-now-number {
+    display: none;
+  }
+  
+  .fa-phone {
+    display: initial;
+    font-size: 18px;
+    margin: 0;
+    padding: 12px;
+  }
+  
+  section {
+    padding: 10px;
+  }
+  
+  .gradient {
+    width: 100%;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    font-weight: 700;
+    left: 10%;
+  }
+  
+    .benefitTitle {
+    font-size: 18px
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  
+  #top-bar {
+    height: 80px;
+    flex-direction: column;
+  }
+  
+  #header {
+    border-bottom: 0px solid;
+  }
+  
+  .menu-wrapper {
+    height: 80px;
+  }
+  
+  .menu-bar {
+    display: none;
+  }
+  
+  .logo-wrapper {
+    
+  }
+  
+  .fa-bars {
+    cursor: pointer;
+    display: initial;
+    font-size: 26px;
+  }
+  
+  .menu-bar-mobile-wrapper {
+    z-index: 1000000;
+/*     display: none; */
+    position: absolute;
+    right: 0;
+/*     top: 112px; */
+    background-color: #fff;
+    width: 10em;
+  }
+  
+  .menu-bar-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-bar-mobile > .menu-item {
+    border-bottom: 1px solid #090C75;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  main {
+      flex-direction: column;
+  }
+  
+  #sections-wrapper {
+    margin-top: 0;
+  }
+  
+/*  BENEFITS STYLES  */
+  
+  .benefitTitle {
+  }
+  
+  .benefit h4 {
+    
+  }
+}
