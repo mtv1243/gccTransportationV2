@@ -46,6 +46,10 @@ a:hover {
   display: none;
 }
 
+.call-us {
+  display: none;
+}
+
 #top-bar > a {
   color: #FEFCFD;
   text-decoration: none;
@@ -412,8 +416,6 @@ footer {
 
 @media only screen and (max-width: 425px) {
   
-
-  
   .hero {
     height: 60vh;
   }
@@ -426,19 +428,28 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 1px;
+    padding-bottom: 1px;
     text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
   }
   
   .call-now, .call-now-number {
     display: none;
   }
   
+  .call-us {
+    display: initial;
+  }
+  
   .fa-phone {
     display: initial;
-    font-size: 18px;
+    font-size: 12px;
     margin: 0;
-    padding: 12px;
+    padding-right: 8px;
   }
   
   section {
@@ -463,7 +474,6 @@ footer {
 @media only screen and (max-width: 768px) {
   
   #top-bar {
-/*     height: 80px; */
     flex-direction: column;
   }
   
@@ -475,8 +485,12 @@ footer {
     border-bottom: 0px solid;
   }
   
+  .marquis {
+    box-shadow: 10px 0px 10px rgba(0,0,0,.3);    
+  }
+  
   .menu-wrapper {
-    height: 80px;
+    height: 50px;
   }
   
   .menu-bar {
@@ -484,7 +498,20 @@ footer {
   }
   
   .logo-wrapper {
-    
+    height: 30px;
+  }
+  
+  .call-now-wrapper {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .call-now {
+    text-transform: uppercase;
+    line-height: 1em;
+    padding-top: 5px;
   }
   
   .fa-bars {
@@ -521,14 +548,5 @@ footer {
   
   #sections-wrapper {
     margin-top: 0;
-  }
-  
-/*  BENEFITS STYLES  */
-  
-  .benefitTitle {
-  }
-  
-  .benefit h4 {
-    
   }
 }
