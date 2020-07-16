@@ -26,11 +26,9 @@ a:hover {
 ---------TOP BAR----------
 */
 #top-bar {
-/*   height: 2em; */
   background-color: #090C75;
   text-align: center;
   display: flex;
-/*   flex-direction: column; */
   justify-content: space-around;
   align-items: center;
 }
@@ -414,6 +412,8 @@ footer {
 
 @media only screen and (max-width: 425px) {
   
+
+  
   .hero {
     height: 60vh;
   }
@@ -463,8 +463,11 @@ footer {
 @media only screen and (max-width: 768px) {
   
   #top-bar {
-    height: 80px;
     flex-direction: column;
+  }
+  
+  .covid-top-bar, #espanol {
+    width: 100%;
   }
   
   #header {
@@ -507,6 +510,7 @@ footer {
   .menu-bar-mobile > .menu-item {
     border-bottom: 1px solid #090C75;
     font-weight: 500;
+    padding: 10px;
     font-style: normal;
   }
   
