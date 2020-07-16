@@ -108,7 +108,7 @@ a:hover {
   background-size: contain;
   background-position: center;
   height: 40px;
-  width: 100px;
+  width: 63px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -144,7 +144,7 @@ a:hover {
 
 .hero {
   height: 70vh;
-  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594143145/GCC%20Transportation%20V2/stock-photo-couple-of-seniors-smiling-and-looking-at-the-same-tablet-hugged-on-the-sofa-indoor-at-home-1389334208-compressed-flipped.jpg");
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594914198/GCC%20Transportation%20V2/Full%20Size/old-man-at-home-shutterstock_1389334208-compressed.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -235,15 +235,15 @@ section {
 }
 
 .services-photo {
-  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594240717/GCC%20Transportation%20V2/stock-photo-young-man-in-wheelchair-with-wide-opened-arms-enjoying-his-life-at-a-lake-in-spring-182715095-compressed.jpg");
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594914003/GCC%20Transportation%20V2/Full%20Size/wheelchair-dock-shutterstock_182715095-compressed.jpg");
 }
 
 .enroll-photo {
-  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594241774/GCC%20Transportation%20V2/stock-photo-two-businesswomen-using-laptop-in-boardroom-meeting-633364772.jpg");
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594914003/GCC%20Transportation%20V2/Full%20Size/women-at-table-shutterstock_633364772-compressed.jpg");
 }
 
 .drivers-photo {
-  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594831666/GCC%20Transportation%20V2/stock-photo-transport-people-and-taxi-concept-happy-smiling-male-driver-driving-car-with-passenger-1522211711.jpg");
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594914002/GCC%20Transportation%20V2/Full%20Size/driver-smiling-shutterstock_1522211711-compressed.jpg");
   background-position: 50% 35%;
 }
 
@@ -463,10 +463,11 @@ footer {
 @media only screen and (max-width: 768px) {
   
   #top-bar {
+/*     height: 80px; */
     flex-direction: column;
   }
   
-  .covid-top-bar, #espanol {
+   .covid-top-bar, #espanol {
     width: 100%;
   }
   
