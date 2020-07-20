@@ -117,7 +117,16 @@ a:hover {
   margin-bottom: 5px;
 }
 
-.menu-bar-mobile, .fa-bars {
+.menu-bar-mobile {
+  display: none;
+}
+
+.bars-wrapper {
+  display: none;
+  cursor: pointer;
+}
+
+.hide {
   display: none;
 }
 
@@ -222,9 +231,15 @@ section {
   display: inline;
 }
 
-.enroll-title, .services-title, .drivers-title {
+.enroll-title, .services-title, .drivers-title{
   color: #383733;
   text-shadow: 0px 0px 20px rgba(255,255,255, 1);
+}
+
+.wheelchair-title {
+  left: 20px;
+  z-index: 20;
+  font-weight: 500;
 }
 
 .section-photo {
@@ -249,6 +264,18 @@ section {
 .drivers-photo {
   background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1594914002/GCC%20Transportation%20V2/Full%20Size/driver-smiling-shutterstock_1522211711-compressed.jpg");
   background-position: 50% 35%;
+}
+
+.wheelchair-photo {
+  background-image: url("https://res.cloudinary.com/mtv1243/image/upload/v1595107367/GCC%20Transportation%20V2/Full%20Size/shutterstock_646241599_-_wheelchair_van_compressed.jpg");
+  height: 200px;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: #f8f6f5;
+  opacity: .7;
 }
 
 .gradient {
@@ -290,6 +317,18 @@ ol > li > span.li-text {
   color: #CB1010;
 }
 
+/* 
+---------ELIGIBILITY STYLES-------
+*/
+
+.eligibility {
+  padding-right: 10px;
+}
+
+.field_value {
+  padding-right: 10px;
+}
+
 .paperform-button {
   cursor: pointer;
   width: 100%;
@@ -307,15 +346,17 @@ ol > li > span.li-text {
   margin: 0 auto;
   margin-bottom: 45px;
   width: 60%;
-  height: 40px;
   background-color: #CB1010;
-  border-radius: 20px;
+  border-radius: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #FEFCFD;
   text-decoration: none;
-  padding-left: auto;
+  text-align: center;
+  line-height: 1.2em;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-weight: 500;
 }
 
@@ -407,6 +448,11 @@ footer {
 
 .footer-link:hover {
   color: #cecece;
+}
+
+.footer-link > i {
+  font-size: 10px;
+  padding-right: 4px;
 }
 
 .copyright {
@@ -514,10 +560,20 @@ footer {
     padding-top: 5px;
   }
   
-  .fa-bars {
+  .fa-bars, {
     cursor: pointer;
-    display: initial;
+    display: inline;
     font-size: 26px;
+  }
+  
+  .fa-times {
+    font-size: 20px;
+  }
+  
+  .bars-wrapper {
+    display: inline;
+    justify-content: center;
+    align-items: center;
   }
   
   .menu-bar-mobile-wrapper {
@@ -548,5 +604,17 @@ footer {
   
   #sections-wrapper {
     margin-top: 0;
+    border-bottom: 10px solid #090c75;
+  }
+  
+  .eligibility {
+    padding-right: 10px;
+  }
+  
+  .footer-columns {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }

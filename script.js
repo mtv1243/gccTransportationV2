@@ -1,3 +1,5 @@
+console.log('working');
+
 let $sectionsWrapper = $('#sections-wrapper');
 let $sidebar = $('#sidebar');
 
@@ -31,6 +33,7 @@ let $benefitsSect = $('.benefits');
 // Mobile menu bar code
 let $menuMobile = $('.menu-bar-mobile');
 let $bars = $('.fa-bars');
+let $menuX = $('.fa-times');
 
 //desktop menu items variables
 let $servicesItem = $('.item01');
@@ -93,38 +96,58 @@ function scrollToElement(element){
 
 //mobile scroll
 $bars.click((evt)=>{
-  console.log(evt);
+  // console.log(evt);
   $menuMobile.slideToggle();
+  $bars.fadeOut(200);
+  setTimeout(()=>{$menuX.fadeIn(200)}, 200);
+});
+
+$menuX.click((evt)=>{
+  $menuMobile.slideToggle();
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 $servicesMobileItem.click(()=>{
   console.log('click');
   mobileScrollToElement($servicesSect);
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 $enrollMobileItem.click(()=>{
   console.log('click');
   mobileScrollToElement($enrollSect);
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 $driversMobileItem.click(()=>{
   console.log('click');
   mobileScrollToElement($driversSect);
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 $eligibilityMobileItem.click(()=>{
   console.log('click');
   mobileScrollToElement($eligibilitySect);
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 $careersMobileItem.click(()=>{
   console.log('click');
   mobileScrollToElement($applySect);
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 $benefitsMobileItem.click(()=>{
   console.log('click');
   mobileScrollToElement($benefitsSect);
+  $menuX.fadeOut(200);
+  setTimeout(()=>{$bars.fadeIn(200)}, 200);
 });
 
 //scroll mobile function
