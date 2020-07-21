@@ -111,8 +111,8 @@ a:hover {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  height: 40px;
-  width: 63px;
+  height: 80px;
+  width: 83px;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -545,6 +545,7 @@ footer {
   
   .logo-wrapper {
     height: 30px;
+    width: 50px;
   }
   
   .call-now-wrapper {
@@ -571,9 +572,10 @@ footer {
   }
   
   .bars-wrapper {
-    display: inline;
+    display: flex;
     justify-content: center;
     align-items: center;
+    width: 50px;
   }
   
   .menu-bar-mobile-wrapper {
